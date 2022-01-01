@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.calc {
+	max-width: 20rem;
+    max-height: 20rem;
+    border: 1px solid;
+    display: flex;
+    padding: 0.25rem;
+    padding-bottom: 0;
+    flex-direction: column;
+    background-color: #242424;
+}
+
+.display {
+	min-height: 2rem;
+    border: 1px solid;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    color: white;
+    line-height: 2rem;
+    text-align: right;
+    font-size: 1.25rem;
+}
+
+.display.hide {
+	opacity: .2;
+}
+
+.input-wrap {
+	display: flex;
+	align-items: baseline;
+    align-content: center;
+}
+
+.number-wrap {
+	width: 80%;
+	overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.number {
+	width: 24%;
+	flex: 0 1 auto;
+	margin: 0;
+	margin-bottom: .25rem;
+	border: 1px solid;
+	padding: .5rem;
+	text-align: center;
+	background-color: gray;
+    color: white;
+}
+
+.number.option {
+	background-color: blue;
+}
+
+.ops-wrap {
+	width: 20%;
+    padding-left: 0.5rem;
+}
+
+.ops {
+	flex: 0 1 auto;
+	margin: 0;
+	margin-bottom: .25rem;
+	border: 1px solid;
+	padding: .5rem;
+	text-align: center;
+	background-color: orange;
+    color: white;
+}
+
+.number:hover, .ops:hover {
+	background-color: pink;
+	color: black;
+}
